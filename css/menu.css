@@ -1,0 +1,157 @@
+/* Importación de la fuente Montserrat desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* Estilos globales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F9F9F9; /* Color de fondo claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #FFC107; /* Amarillo dorado */
+    padding: 0.75rem; /* Padding ajustado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+    max-width: 1900px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el navbar */
+}
+
+/* Estilos de la marca del navbar */
+.navbar-brand {
+    font-size: 1.5rem; /* Tamaño del texto para la marca */
+    font-weight: 700;
+    color: #333; /* Gris oscuro */
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center; /* Alinea el logo verticalmente */
+}
+
+/* Estilos para el logo */
+.navbar-brand img {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción del logo */
+    max-height: 60px; /* Limita la altura máxima del logo */
+}
+
+/* Estilos del botón de alternancia */
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url('../img/colmena.svg'); /* Icono de colmena */
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+/* Estilos de los enlaces de navegación */
+.navbar-nav {
+    margin-left: auto; /* Alinea las opciones a la derecha */
+}
+
+.navbar-light .navbar-nav .nav-item {
+    position: relative; /* Necesario para dropdowns */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333; /* Gris oscuro para enlaces */
+    font-weight: 500;
+    padding: 0.5rem 1rem; /* Padding ajustado */
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilos para el enlace activo y en foco */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:focus {
+    background-color: #FFC107; /* Amarillo dorado para enlace activo */
+    color: #FFF; /* Texto blanco */
+}
+
+/* Estilos para los enlaces en hover */
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #FFC107; /* Amarillo dorado en hover */
+    color: #333; /* Gris oscuro */
+}
+
+/* Estilos del menú desplegable */
+.navbar-light .dropdown-menu {
+    background-color: #FFC107; /* Amarillo dorado */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.navbar-light .dropdown-menu .dropdown-item {
+    color: #333; /* Gris oscuro para los elementos */
+    font-weight: 500;
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+}
+
+.navbar-light .dropdown-menu .dropdown-item:hover {
+    background-color: #FFC107; /* Amarillo dorado en hover */
+    color: #333; /* Gris oscuro */
+}
+
+/* Evitar que el fondo del dropdown-item activo se mantenga azul */
+.navbar-light .dropdown-menu .dropdown-item.active,
+.navbar-light .dropdown-menu .dropdown-item:focus {
+    background-color: #FFC107; /* Amarillo dorado */
+    color: #FFF; /* Texto blanco */
+}
+
+/* Estilos para el menú en dispositivos móviles */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #FFC107; /* Amarillo dorado */
+        border-radius: 5px;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center; /* Centrar en el menú desplegable */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.75rem; /* Padding ajustado para móviles */
+        color: #333; /* Gris oscuro */
+        border-bottom: 1px solid #ddd; /* Separador */
+    }
+
+    .navbar-nav .nav-link:last-child {
+        border-bottom: none; /* Quitar borde del último elemento */
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+        background-color: #333; /* Fondo oscuro en hover o activo */
+        color: #fff; /* Texto blanco */
+    }
+}
+
+/* Estilos para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    .navbar-brand img {
+        max-width: 80px; /* Reducir tamaño del logo */
+    }
+
+    .navbar-toggler-icon {
+        background-size: 24px 24px; /* Ajustar tamaño del icono del botón */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.875rem; /* Reducir tamaño de fuente */
+        padding: 0.5rem; /* Ajustar padding */
+    }
+}

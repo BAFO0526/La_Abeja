@@ -1,0 +1,143 @@
+
+
+.proceso__title {
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Estilos de la línea de tiempo */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Línea vertical en la línea de tiempo */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #FFC107;
+    transform: translateX(-50%);
+}
+
+/* Estilos de los elementos de la línea de tiempo */
+.timeline__item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+/* Centrar elementos en pantallas pequeñas */
+.timeline__item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline__item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+/* Estilos del contenido de los elementos */
+.timeline__content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.timeline__title {
+    font-weight: 600;
+    color: #FFC107;
+    margin-bottom: 10px;
+}
+
+.timeline__text {
+    font-weight: 300;
+    color: #555;
+}
+
+/* Estilos para las líneas conectando los elementos */
+.timeline__item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFC107;
+    border-radius: 50%;
+    top: 20px;
+    z-index: 2;
+}
+
+.timeline__item:nth-child(odd)::before {
+    right: -10px;
+}
+
+.timeline__item:nth-child(even)::before {
+    left: -10px;
+}
+
+/* Mejoras en Responsividad */
+@media (max-width: 768px) {
+    .timeline::before {
+        display: none !important;
+    }
+    .timeline__item::before{
+        display: none !important;
+    }
+
+    .timeline__item {
+        width: 100%;
+        padding: 20px;
+        text-align: center; /* Centra el texto en móviles */
+        margin-bottom: 20px;
+    }
+
+    .timeline__item:nth-child(odd),
+    .timeline__item:nth-child(even) {
+        /* Alineación centrada para todos los elementos en móviles */
+        left: 0;
+        text-align: center;
+    }
+
+    .timeline__content {
+        padding: 20px;
+        box-shadow: none;
+        border-left: none;
+        border-top: 2px solid #FFC107;
+        margin: 0 auto;
+        max-width: 70%; /* Ajusta el ancho máximo para móviles */
+    }
+
+    .timeline__title {
+        font-size: 18px;
+    }
+
+    .timeline__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline__item {
+        padding: 10px; /* Reduce el padding para pantallas muy pequeñas */
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+
+    .timeline__content {
+        padding: 15px;
+    }
+}

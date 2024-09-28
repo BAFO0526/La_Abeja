@@ -1,0 +1,143 @@
+/* Estilo para el menú lateral */
+#sidebar {
+    background-color: #F2F2F2 !important;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 280px;
+    padding: 20px 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    z-index: 1000; /* Asegura que el menú lateral esté por encima de otros elementos */
+}
+
+/* Estilo para cuando el menú lateral está colapsado */
+#sidebar.show {
+    display: block; /* Muestra el menú cuando se activa la clase "show" */
+}
+
+/* Asegúrate de que el navbar no tenga márgenes o rellenos adicionales */
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    width: 90%;
+    margin: auto;
+}
+
+/* Estilos para el botón de hamburguesa */
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-logo {
+    display: none;
+}
+
+/* Estilo para el contenedor del logo */
+.sidebar-title {
+    text-align: center; /* Centra el contenido del contenedor */
+    width: 150px; /* Ajusta el ancho del contenedor según sea necesario */
+    margin: 0 auto; /* Centra el contenedor en su elemento padre si es necesario */
+}
+
+/* Estilo para el logo */
+.sidebar-title img {
+    width: 100%; /* Asegura que el logo ocupe todo el ancho del contenedor */
+}
+
+/* Estilo para los enlaces del menú lateral */
+#sidebar .nav-link {
+    color: #0D0D0D;
+    font-weight: 500;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 0.375rem;
+}
+
+#sidebar .nav-link i {
+    margin-right: 10px;
+    color: #D98555;
+    transition: color 0.3s ease;
+}
+
+#sidebar .nav-link:hover {
+    background-color: #F2C36B;
+    color: #0D0D0D;
+}
+
+#sidebar .nav-link:hover i {
+    color: #0D0D0D;
+}
+
+#sidebar .nav-link.active {
+    background-color: #D97B59;
+    color: #F2F2F2;
+}
+
+#sidebar .nav-link.active i {
+    color: #F2F2F2;
+}
+
+#sidebar .nav-item + .nav-item {
+    margin-top: 15px;
+}
+/* Estilo responsivo para pantallas menores a 1120px */
+@media (max-width: 1119px) {
+    #sidebar {
+        display: none; /* Oculta el menú lateral por defecto */
+    }
+
+    .navbar-logo {
+        display: block; /* Muestra el logo en pantallas pequeñas */
+        width: 120px;
+    }
+
+    .sidebar-title img {
+        display: none;
+    }
+
+
+    .navbar-toggler {
+        display: block; /* Muestra el botón de hamburguesa en pantallas pequeñas */
+    }
+
+    /* Estilo para cuando el menú lateral está colapsado */
+    #sidebar.show {
+        display: block; /* Muestra el menú cuando se activa la clase "show" */
+        top: 56px; /* Ajusta según el tamaño del navbar */
+        left: 0;
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+    main {
+        margin-left: 0;
+        /* Elimina el margen izquierdo del contenido */
+        width: 100% !important;
+        /* Asegura que el contenido ocupe todo el ancho disponible */
+    }
+}
+
+/* Estilo para pantallas mayores o iguales a 1120px */
+@media (min-width: 1120px) {
+    .navbar-toggler {
+        display: none; /* Oculta el botón de hamburguesa en pantallas grandes */
+    }
+
+    #sidebar {
+        display: block; /* Muestra el menú lateral en pantallas grandes */
+        top: 0;
+        left: 0;
+        width: 280px; /* Ancho del menú lateral */
+        height: 100%; /* Altura del menú lateral */
+    }
+
+    #content {
+        margin-left: 280px; /* Ajusta el contenido para que no se superponga con el menú lateral */
+    }
+}

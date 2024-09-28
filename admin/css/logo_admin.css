@@ -1,0 +1,87 @@
+/* Estilo básico para el contenedor de administración del logo */
+.container {
+    background-color: #F4F4F4 !important; /* Fondo gris muy claro */
+    color: #333 !important; /* Texto en gris oscuro */
+    padding: 20px !important;
+    border-radius: 8px !important; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
+}
+
+/* Estilo para el encabezado */
+.container h2 {
+    color: #000000 !important; /* Azul más suave y menos brillante */
+    margin-bottom: 15px !important;
+    font-weight: bold !important;
+}
+
+/* Estilo para los mensajes de éxito */
+.alert-success {
+    background-color: #28a745 !important; /* Verde exitoso */
+    color: #FFFFFF !important; /* Texto blanco */
+    border-radius: 4px !important;
+    padding: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+/* Estilo para los mensajes de error */
+.alert-danger {
+    background-color: #dc3545 !important; /* Rojo más suave */
+    color: #FFFFFF !important; /* Texto blanco */
+    border-radius: 4px !important;
+    padding: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+/* Estilo para el formulario */
+form {
+    background-color: #FFFFFF !important; /* Fondo blanco */
+    padding: 15px !important;
+    border-radius: 8px !important;
+    margin-bottom: 15px !important;
+    border: 1px solid #CED4DA !important; /* Borde gris claro */
+}
+
+/* Estilo para las etiquetas del formulario */
+.form-label {
+    color: #333 !important; /* Texto en gris oscuro */
+    font-weight: bold !important;
+}
+
+/* Estilo para el campo de entrada de archivo */
+.form-control {
+    background-color: #E9ECEF !important; /* Fondo gris muy claro */
+    color: #333 !important; /* Texto en gris oscuro */
+    border: 1px solid #ADB5BD !important; /* Borde gris claro */
+    border-radius: 4px !important;
+    padding: 8px !important;
+}
+
+/* Estilo para el botón de envío */
+.btn-primary {
+    background-color: #007BFF !important; /* Azul más suave */
+    color: #FFFFFF !important; /* Texto blanco */
+    border: none !important; /* Sin borde */
+    border-radius: 4px !important;
+    padding: 8px 16px !important;
+    font-weight: bold !important;
+}
+
+/* Estilo para el botón de envío al pasar el ratón */
+.btn-primary:hover {
+    background-color: #0056b3 !important; /* Azul más oscuro al hacer hover */
+}
+
+/* Estilo para la sección del logo actual */
+.mt-4 {
+    margin-top: 20px !important;
+}
+
+.mt-4 h4 {
+    color: #0a0a0a !important; /* Azul más suave y menos brillante */
+    margin-bottom: 10px !important;
+}
+
+.mt-4 img {
+    max-width: 100% !important; /* Asegura que la imagen no se desborde */
+    border-radius: 8px !important; /* Bordes redondeados */
+}

@@ -1,0 +1,187 @@
+/* Estilos generales para el contenedor de servicios */
+#servicios {
+  z-index: 1;
+  position: relative;
+  padding: 4rem 1.6rem;
+  background-color: #f9f9f9;
+}
+
+/* Estilo para el título de los servicios */
+.servicios__title {
+  font-size: 2.5rem;
+  color: #000000;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  margin: 0 auto 4rem;
+}
+
+/* Estilo para las filas de tarjetas */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1.6rem; /* Compensa el padding aplicado a las columnas */
+}
+
+/* Estilo para las columnas en dispositivos medianos y mayores */
+.col-md-4 {
+  flex: 1 1 calc(50% - 1.6rem); /* Ocupa 50% menos el margen */
+  padding: 1.6rem;
+  margin: auto;
+}
+
+/* Estilo para la fila con tres elementos o más */
+.row.three-items {
+  flex-wrap: wrap;
+}
+
+/* Ajusta el ancho para tres elementos por fila */
+.row.three-items .col-md-4 {
+  flex: 1 1 calc(33.333% - 1.6rem); /* Ajusta el ancho para tres elementos por fila */
+}
+
+/* Estilo para las tarjetas con efecto de inclinación */
+.tilt-card {
+  min-height: 250px;
+  position: relative;
+  background-color: #ffffff;
+  margin-bottom: 1.6rem;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Estilo para el fondo de la tarjeta */
+.tilt-card__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Estilo para el contenido interno de la tarjeta */
+.tilt-card__inner {
+  transform: translateZ(20px);
+  text-align: center;
+}
+
+/* Estilo para el icono de la tarjeta */
+.tilt-card__icon {
+  height: 75px;
+  width: 75px;
+  margin: 0 auto;
+  background-color: #ff9033;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.8rem;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 1;
+}
+
+/* Estilo para el título dentro de la tarjeta */
+.tilt-card__title {
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: #5c5c5c;
+  text-align: center;
+  margin: 1.6rem auto;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Estilo para el texto dentro de la tarjeta */
+.tilt-card__text {
+  font-size: 1.6rem;
+  color: #adadad;
+  margin: 0;
+  line-height: 1.45;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Estilo para cuando la tarjeta está en estado hover */
+.tilt-card:hover {
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+/* Efectos de hover para el fondo de la tarjeta */
+.tilt-card:hover .tilt-card__bg {
+  opacity: 0.2;
+}
+
+/* Efectos de hover para el contenido interno de la tarjeta */
+.tilt-card:hover .tilt-card__inner {
+  color: #f0f0f0;
+}
+
+/* Efectos de hover para el icono de la tarjeta */
+.tilt-card:hover .tilt-card__icon {
+  background-color: #f0f0f0;
+  color: #5f5f5f;
+}
+
+/* Efectos de hover para el título dentro de la tarjeta */
+.tilt-card:hover .tilt-card__title {
+  color: #ffffff;
+}
+
+/* Efectos de hover para el texto dentro de la tarjeta */
+.tilt-card:hover .tilt-card__text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/*video de fondi*/
+/* Estilo para la tarjeta con el video de fondo */
+.tilt-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilo para el fondo de la tarjeta */
+.tilt-card__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1; /* Asegura que el video esté detrás del contenido de la tarjeta */
+}
+
+.tilt-card__bg video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el tamaño del video para cubrir el área */
+  transform: translate(-50%, -50%);
+}
+
+/* Estilo para el contenido interno de la tarjeta */
+.tilt-card__inner {
+  position: relative;
+  z-index: 1; /* Asegura que el contenido esté por encima del video */
+  text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 1 1 calc(100% - 1.6rem); /* Ajusta el ancho a 100% en pantallas más pequeñas */
+  }
+}

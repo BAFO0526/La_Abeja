@@ -1,0 +1,97 @@
+/* Estilo para la tarjeta que contiene la tabla */
+.card {
+    border: 1px solid #BDBDBD !important; /* Borde gris suave */
+    border-radius: 8px !important; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
+    background-color: #F9F9F9 !important; /* Fondo gris muy claro */
+    color: #333 !important; /* Texto en gris oscuro */
+    margin-bottom: 20px !important;
+}
+
+/* Estilo para el encabezado de la tarjeta */
+.card-header {
+    background-color: #F0F0F0 !important; /* Fondo gris claro */
+    color: #333 !important; /* Texto en gris oscuro */
+    padding: 15px !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    text-align: center !important;
+}
+
+/* Estilo para el cuerpo de la tarjeta */
+.card-body {
+    padding: 20px !important;
+    background-color: #F9F9F9 !important; /* Fondo gris muy claro */
+    border-radius: 0 0 8px 8px !important;
+}
+
+/* Estilo para la tabla dentro del cuerpo de la tarjeta */
+.table {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    background-color: transparent !important;
+    color: #333 !important; /* Texto en gris oscuro */
+}
+
+/* Estilo para los encabezados de la tabla */
+.table thead th {
+    background-color: #bec5ca !important; /* Fondo azul muy claro */
+    color: #2C3E50 !important; /* Texto en azul oscuro */
+    font-weight: bold !important;
+    padding: 14px 16px !important;
+    text-align: center !important;
+    border-bottom: 2px solid #BDBDBD !important; /* Línea divisoria inferior en gris suave */
+}
+
+/* Estilo para las filas de la tabla */
+.table tbody tr {
+    background-color: #F9F9F9 !important; /* Fondo gris muy claro */
+    border-bottom: 1px solid #BDBDBD !important; /* Línea divisoria entre filas en gris suave */
+}
+
+/* Estilo para las celdas de la tabla */
+.table td {
+    padding: 12px 15px !important;
+    text-align: left !important;
+    color: #333 !important; /* Texto en gris oscuro */
+    border-bottom: 1px solid #BDBDBD !important; /* Línea divisoria en celdas en gris suave */
+}
+
+/* Estilo para el botón de editar */
+.btn-warning {
+    background-color: #BDBDBD !important; /* Gris suave */
+    border-color: #9E9E9E !important; /* Gris más oscuro */
+    color: #333 !important; /* Texto en gris oscuro */
+    border-radius: 4px !important;
+}
+
+/* Estilo para el botón de eliminar */
+.btn-danger {
+    background-color: #C62828 !important; /* Rojo más oscuro */
+    border-color: #B71C1C !important; /* Rojo más profundo */
+    color: #ffffff !important; /* Texto blanco */
+    border-radius: 4px !important;
+}
+
+/* Estilo para la primera fila del cuerpo de la tabla */
+.table tbody tr:first-of-type {
+    border-top: 3px solid #D6EAF8 !important; /* Línea superior en azul claro */
+}
+
+/* Estilo para las filas alternas */
+.table tbody tr:nth-of-type(odd) {
+    background-color: #F2F2F2 !important; /* Fondo gris claro alterno */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px !important; /* Reducir el tamaño de la fuente en dispositivos móviles */
+    }
+    .card-header {
+        font-size: 16px !important; /* Reducir el tamaño de la fuente en el encabezado de la tarjeta */
+    }
+    .table td, .table th {
+        padding: 8px !important; /* Reducir el padding en dispositivos móviles */
+    }
+}

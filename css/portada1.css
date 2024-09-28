@@ -1,0 +1,85 @@
+/* styles.css */
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 2s ease-in-out;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: bold; /* Mejora la legibilidad del encabezado */
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin: 20px 0 0;
+    font-weight: 300; /* Da un contraste visual con el encabezado */
+}
+
+.btn-primary {
+    background-color: #ffcc00 !important; /* Un color que contraste con el fondo oscuro */
+    border: none !important;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #e5b700 !important; /* Un tono más oscuro en hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 0.875rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        padding: 8px 16px;
+    }
+}

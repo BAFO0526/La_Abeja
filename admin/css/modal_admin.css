@@ -1,0 +1,63 @@
+/* Estilo básico para los modales */
+.modal-content {
+    background-color: #FAFAFA !important; /* Fondo gris claro y neutro */
+    color: #4A4A4A !important; /* Texto en gris medio oscuro */
+    border-radius: 8px !important; /* Bordes redondeados */
+    border: none !important; /* Sin borde */
+}
+
+/* Estilo para el encabezado del modal */
+.modal-header {
+    border-bottom: 1px solid #C0C0C0 !important; /* Línea divisoria gris claro */
+    background-color: #F0F0F0 !important; /* Fondo gris muy claro */
+    color: #4A4A4A !important; /* Texto en gris medio oscuro */
+    padding: 15px 20px !important; /* Padding del encabezado */
+}
+
+/* Estilo para el título del modal */
+.modal-title {
+    color: #4A4A4A !important; /* Texto en gris medio oscuro */
+    font-weight: bold !important;
+}
+
+/* Estilo para los íconos dentro del modal */
+.modal-header .modal-title i {
+    font-size: 1.5rem !important; /* Tamaño del ícono */
+    margin-right: 10px !important; /* Espacio entre el ícono y el texto */
+    color: #4A4A4A !important; /* Color del ícono en gris medio oscuro */
+}
+
+/* Estilo para el cuerpo del modal */
+.modal-body {
+    padding: 20px !important; /* Padding del cuerpo */
+    color: #4A4A4A !important; /* Texto en gris medio oscuro */
+}
+
+/* Estilo para el botón de cerrar */
+.close {
+    color: #4A4A4A !important; /* Texto en gris medio oscuro */
+    opacity: 0.7 !important; /* Opacidad del botón de cerrar */
+}
+
+.close:hover {
+    color: #000 !important; /* Color negro al pasar el ratón */
+    opacity: 1 !important; /* Opacidad completa al pasar el ratón */
+}
+
+/* Estilo para el fondo del modal */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.4) !important; /* Fondo negro semi-transparente moderado */
+}
+
+/* Estilo para el botón de acción del modal (si aplica) */
+.modal-footer .btn-primary {
+    background-color: #6C757D !important; /* Gris medio */
+    color: #FFFFFF !important; /* Texto blanco */
+    border: none !important; /* Sin borde */
+    border-radius: 4px !important; /* Bordes redondeados */
+    padding: 10px 20px !important; /* Padding del botón */
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #5A6268 !important; /* Gris oscuro al hacer hover */
+}

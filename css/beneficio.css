@@ -1,0 +1,96 @@
+/* Estilos para la sección de beneficios */
+#beneficios {
+    padding: 30px 0; /* Padding superior e inferior */
+    background-color: #f8f9fa;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+.beneficios__title {
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.beneficio-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px; /* Padding ajustado */
+    transition: transform 0.3s ease;
+    max-width: 100%; /* Asegura que la tarjeta no se salga del contenedor */
+    margin: 0 auto; /* Centra las tarjetas */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.beneficio-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación sutil */
+}
+
+.beneficio-card__img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.beneficio-card__title {
+    font-weight: 600;
+    color: #FFC107;
+    margin-top: 10px; /* Margen superior */
+    font-size: 1.2rem; /* Tamaño de fuente ajustado */
+    text-align: center !important;
+}
+
+.beneficio-card__text {
+    font-weight: 300;
+    color: #555;
+    margin-top: 5px; /* Margen superior */
+    font-size: 0.875rem; /* Tamaño de fuente ajustado */
+}
+
+.beneficio-card__icon {
+    font-size: 60px; /* Tamaño del icono ajustado */
+    color: #FFC107;
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .beneficio-card {
+        padding: 12px; /* Padding ajustado para pantallas medianas */
+        margin-bottom: 15px; /* Margen inferior */
+        max-width: 100%; /* Asegura que ocupe el 100% del ancho en pantallas medianas */
+    }
+
+    .beneficio-card__title {
+        font-size: 1rem; /* Tamaño de fuente reducido */
+    }
+
+    .beneficios__title {
+        font-size: 1.5rem; /* Tamaño de fuente ajustado */
+    }
+
+    .beneficio-card__text {
+        font-size: 0.75rem; /* Tamaño de fuente reducido */
+    }
+}
+
+@media (max-width: 576px) {
+    .beneficio-card {
+        padding: 8px; /* Padding reducido para dispositivos pequeños */
+        max-width: 100%; /* Asegura que ocupe el 100% del ancho en dispositivos pequeños */
+    }
+
+    .beneficio-card__title {
+        font-size: 0.9rem; /* Tamaño de fuente reducido */
+    }
+
+    .beneficio-card__text {
+        font-size: 0.7rem; /* Tamaño de fuente reducido */
+    }
+
+    .beneficio-card__icon {
+        font-size: 50px; /* Tamaño del icono reducido */
+    }
+}

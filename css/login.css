@@ -1,0 +1,65 @@
+.login-container {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-top: 150px !important;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin: 50px auto; /* Centra el contenedor en la página */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-container .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.login-container .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-container .input-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFC107;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container .input-group button:hover {
+    background-color: #e6a500;
+}
+
+.login-container .forgot-password {
+    margin-top: 15px;
+}
+
+.login-container .forgot-password a {
+    color: #FFC107;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-container .forgot-password a:hover {
+    text-decoration: underline;
+}
